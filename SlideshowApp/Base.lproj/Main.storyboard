@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,126 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIi-8F-fhQ">
+                                <rect key="frame" x="87.5" y="60" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="L8g-AT-vdU"/>
+                                    <constraint firstAttribute="height" constant="200" id="Y12-HR-izR"/>
+                                </constraints>
+                                <state key="normal" image="sun"/>
+                                <connections>
+                                    <action selector="showBigImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iia-IY-w0m"/>
+                                    <segue destination="4gH-33-zKc" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lLA-QJ-vtf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nr-hL-Hg2">
+                                <rect key="frame" x="145" y="451" width="85" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="T3d-OB-H1S"/>
+                                    <constraint firstAttribute="height" constant="85" id="lzG-Rf-2tf"/>
+                                </constraints>
+                                <state key="normal" image="start"/>
+                                <connections>
+                                    <action selector="toggleSlideShowMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZZ-Lo-rTN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="bottomRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtX-aB-E8E">
+                                <rect key="frame" x="25" y="451" width="85" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="HlE-rJ-wDm"/>
+                                    <constraint firstAttribute="height" constant="85" id="Zz7-7j-Nc2"/>
+                                </constraints>
+                                <state key="normal" image="prev"/>
+                                <connections>
+                                    <action selector="changePreviewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jd-sO-Ie7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yl-mf-HXm">
+                                <rect key="frame" x="265" y="451" width="85" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Q3V-8D-FKR"/>
+                                    <constraint firstAttribute="height" constant="85" id="fbl-KD-ZmO"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="next"/>
+                                <connections>
+                                    <action selector="changeNextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PvZ-fg-MPt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Nr-hL-Hg2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="160" id="7YK-Gq-sta"/>
+                            <constraint firstItem="DtX-aB-E8E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="CF0-pM-zqC"/>
+                            <constraint firstItem="0yl-mf-HXm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="160" id="Ccm-Fc-G3s"/>
+                            <constraint firstItem="DtX-aB-E8E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="160" id="Jya-4E-v60"/>
+                            <constraint firstItem="9Nr-hL-Hg2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UD9-SX-wlr"/>
+                            <constraint firstItem="eIi-8F-fhQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="oje-6r-pUH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0yl-mf-HXm" secondAttribute="trailing" constant="25" id="v5Z-il-bN8"/>
+                            <constraint firstItem="eIi-8F-fhQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z0L-5h-eKC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="0yl-mf-HXm" id="Bu3-an-vhR"/>
+                        <outlet property="prevButton" destination="DtX-aB-E8E" id="ne4-fm-mxK"/>
+                        <outlet property="targetImage" destination="eIi-8F-fhQ" id="O2y-FR-W4W"/>
+                        <outlet property="toggleButton" destination="9Nr-hL-Hg2" id="sNy-do-mMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--Scale View Controller-->
+        <scene sceneID="zan-fd-PJJ">
+            <objects>
+                <viewController id="4gH-33-zKc" customClass="ScaleViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eda-LM-Zhb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="thN-V2-OpQ">
+                                <rect key="frame" x="37.5" y="60" width="300" height="267"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb2-oe-F1u">
+                                <rect key="frame" x="157" y="427" width="61" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="7ez-lM-L7o" kind="unwind" unwindAction="unwindVCFor:towards:" id="55x-Hd-7IL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yb2-oe-F1u" firstAttribute="centerX" secondItem="Eda-LM-Zhb" secondAttribute="centerX" id="5vQ-Li-Zpx"/>
+                            <constraint firstItem="thN-V2-OpQ" firstAttribute="height" secondItem="Eda-LM-Zhb" secondAttribute="height" multiplier="0.4" id="91f-t4-ORf"/>
+                            <constraint firstItem="thN-V2-OpQ" firstAttribute="width" secondItem="Eda-LM-Zhb" secondAttribute="width" multiplier="0.8" id="AQ4-zn-V1V"/>
+                            <constraint firstItem="thN-V2-OpQ" firstAttribute="top" secondItem="8SU-96-hky" secondAttribute="top" constant="60" id="Rje-tz-kbV"/>
+                            <constraint firstItem="Yb2-oe-F1u" firstAttribute="top" secondItem="thN-V2-OpQ" secondAttribute="bottom" constant="100" id="eSa-aD-gA5"/>
+                            <constraint firstItem="thN-V2-OpQ" firstAttribute="centerX" secondItem="Eda-LM-Zhb" secondAttribute="centerX" id="vku-HP-jaT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8SU-96-hky"/>
+                    </view>
+                    <connections>
+                        <outlet property="scaledImage" destination="thN-V2-OpQ" id="ZNy-SR-ZVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXh-5i-Bu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7ez-lM-L7o" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="933.60000000000002" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="next" width="256" height="256"/>
+        <image name="prev" width="256" height="256"/>
+        <image name="start" width="256" height="256"/>
+        <image name="sun" width="256" height="256"/>
+    </resources>
 </document>

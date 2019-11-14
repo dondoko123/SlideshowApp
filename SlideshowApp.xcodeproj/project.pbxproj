@@ -13,6 +13,7 @@
 		7AE328BA237AF0EE002496DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328B8237AF0EE002496DC /* Main.storyboard */; };
 		7AE328BC237AF0F1002496DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328BB237AF0F1002496DC /* Assets.xcassets */; };
 		7AE328BF237AF0F1002496DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328BD237AF0F1002496DC /* LaunchScreen.storyboard */; };
+		7AE328C7237D7D5F002496DC /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE328C6237D7D5F002496DC /* ScaleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7AE328BB237AF0F1002496DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE328BE237AF0F1002496DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE328C0237AF0F1002496DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE328C6237D7D5F002496DC /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7AE328B2237AF0EE002496DC /* AppDelegate.swift */,
 				7AE328B4237AF0EE002496DC /* SceneDelegate.swift */,
 				7AE328B6237AF0EE002496DC /* ViewController.swift */,
+				7AE328C6237D7D5F002496DC /* ScaleViewController.swift */,
 				7AE328B8237AF0EE002496DC /* Main.storyboard */,
 				7AE328BB237AF0F1002496DC /* Assets.xcassets */,
 				7AE328BD237AF0F1002496DC /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				7AE328B7237AF0EE002496DC /* ViewController.swift in Sources */,
 				7AE328B3237AF0EE002496DC /* AppDelegate.swift in Sources */,
 				7AE328B5237AF0EE002496DC /* SceneDelegate.swift in Sources */,
+				7AE328C7237D7D5F002496DC /* ScaleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
