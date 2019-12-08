@@ -21,7 +21,7 @@
                                     <constraint firstAttribute="width" constant="200" id="L8g-AT-vdU"/>
                                     <constraint firstAttribute="height" constant="200" id="Y12-HR-izR"/>
                                 </constraints>
-                                <state key="normal" image="sun"/>
+                                <state key="normal" image="sun.png"/>
                                 <connections>
                                     <action selector="showBigImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iia-IY-w0m"/>
                                     <segue destination="4gH-33-zKc" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lLA-QJ-vtf"/>
@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="width" constant="85" id="T3d-OB-H1S"/>
                                     <constraint firstAttribute="height" constant="85" id="lzG-Rf-2tf"/>
                                 </constraints>
-                                <state key="normal" image="start"/>
+                                <state key="normal" image="start.png"/>
                                 <connections>
                                     <action selector="toggleSlideShowMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZZ-Lo-rTN"/>
                                 </connections>
@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="85" id="HlE-rJ-wDm"/>
                                     <constraint firstAttribute="height" constant="85" id="Zz7-7j-Nc2"/>
                                 </constraints>
-                                <state key="normal" image="prev"/>
+                                <state key="normal" image="prev.png"/>
                                 <connections>
                                     <action selector="changePreviewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jd-sO-Ie7"/>
                                 </connections>
@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="width" constant="85" id="Q3V-8D-FKR"/>
                                     <constraint firstAttribute="height" constant="85" id="fbl-KD-ZmO"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="next"/>
+                                <state key="normal" title="Button" image="next.png"/>
                                 <connections>
                                     <action selector="changeNextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PvZ-fg-MPt"/>
                                 </connections>
@@ -127,9 +127,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="next" width="256" height="256"/>
-        <image name="prev" width="256" height="256"/>
-        <image name="start" width="256" height="256"/>
-        <image name="sun" width="256" height="256"/>
+        <image name="next.png" width="256" height="256"/>
+        <image name="prev.png" width="256" height="256"/>
+        <image name="start.png" width="256" height="256"/>
+        <image name="sun.png" width="256" height="256"/>
     </resources>
 </document>

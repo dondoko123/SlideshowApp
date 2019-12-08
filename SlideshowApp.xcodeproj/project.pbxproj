@@ -14,6 +14,13 @@
 		7AE328BC237AF0F1002496DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328BB237AF0F1002496DC /* Assets.xcassets */; };
 		7AE328BF237AF0F1002496DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328BD237AF0F1002496DC /* LaunchScreen.storyboard */; };
 		7AE328C7237D7D5F002496DC /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE328C6237D7D5F002496DC /* ScaleViewController.swift */; };
+		7AE328EF239CE249002496DC /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328E8239CE248002496DC /* prev.png */; };
+		7AE328F0239CE249002496DC /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328E9239CE248002496DC /* start.png */; };
+		7AE328F1239CE249002496DC /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328EA239CE248002496DC /* sun.png */; };
+		7AE328F2239CE249002496DC /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328EB239CE249002496DC /* rain.png */; };
+		7AE328F3239CE249002496DC /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328EC239CE249002496DC /* stop.png */; };
+		7AE328F4239CE249002496DC /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328ED239CE249002496DC /* next.png */; };
+		7AE328F5239CE249002496DC /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE328EE239CE249002496DC /* cloud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		7AE328BE237AF0F1002496DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE328C0237AF0F1002496DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AE328C6237D7D5F002496DC /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		7AE328E8239CE248002496DC /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
+		7AE328E9239CE248002496DC /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		7AE328EA239CE248002496DC /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		7AE328EB239CE249002496DC /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		7AE328EC239CE249002496DC /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		7AE328ED239CE249002496DC /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		7AE328EE239CE249002496DC /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,13 @@
 				7AE328BB237AF0F1002496DC /* Assets.xcassets */,
 				7AE328BD237AF0F1002496DC /* LaunchScreen.storyboard */,
 				7AE328C0237AF0F1002496DC /* Info.plist */,
+				7AE328EE239CE249002496DC /* cloud.png */,
+				7AE328ED239CE249002496DC /* next.png */,
+				7AE328E8239CE248002496DC /* prev.png */,
+				7AE328EB239CE249002496DC /* rain.png */,
+				7AE328E9239CE248002496DC /* start.png */,
+				7AE328EC239CE249002496DC /* stop.png */,
+				7AE328EA239CE248002496DC /* sun.png */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -128,7 +149,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE328F1239CE249002496DC /* sun.png in Resources */,
+				7AE328F3239CE249002496DC /* stop.png in Resources */,
+				7AE328F4239CE249002496DC /* next.png in Resources */,
+				7AE328EF239CE249002496DC /* prev.png in Resources */,
+				7AE328F2239CE249002496DC /* rain.png in Resources */,
+				7AE328F5239CE249002496DC /* cloud.png in Resources */,
 				7AE328BF237AF0F1002496DC /* LaunchScreen.storyboard in Resources */,
+				7AE328F0239CE249002496DC /* start.png in Resources */,
 				7AE328BC237AF0F1002496DC /* Assets.xcassets in Resources */,
 				7AE328BA237AF0EE002496DC /* Main.storyboard in Resources */,
 			);

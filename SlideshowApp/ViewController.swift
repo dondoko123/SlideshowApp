@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var toggleButton: UIButton!
     
-    private var images:[UIImage] = [UIImage(named: "sun")!, UIImage(named: "cloud")!, UIImage(named: "rain")!]
+    private var images:[UIImage] = [UIImage(named: "sun.png")!, UIImage(named: "cloud.png")!, UIImage(named: "rain.png")!]
     private var index:Int = 0
     private var timer:Timer! = nil
     
